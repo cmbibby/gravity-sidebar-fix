@@ -8,7 +8,8 @@
  * Author URI:      https://chrisbibby.com.au
  * Text Domain:     gravity-sidebar-fix
  * Domain Path:     /languages
- * Version:         0.1.0
+ * Version:         1.0.0
+ * GitHub Plugin URI: cmbibby/gravity-sidebar-fix
  *
  * @package         Gravity_Sidebar_Fix
  */
