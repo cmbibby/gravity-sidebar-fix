@@ -1,0 +1,8 @@
+.editor-sidebar > aside {
+	width: 800px;
+}
+
+.panel-block-tabs__body--settings #field_choices .field-choice-text,
+.panel-block-tabs__body--settings .choice_with_value .field-choice-text {
+	max-width: 100% !important;
+}
