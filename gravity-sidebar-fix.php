@@ -18,17 +18,15 @@
 class Gravity_Sidebar_Fix
 {
 
-	public static function init()
-	{
-		wp_register_style('gravity-sidebar-fix', plugin_dir_url(__FILE__) . '/css/gravity-sidebar-fix.css', false, '1.0');
-		add_action('admin_enqueue_scripts', self::enqueue());
-	}
-
 	public static function enqueue()
 	{
-
+		wp_register_style('gravity-sidebar-fix', plugin_dir_url(__FILE__) . '/css/gravity-sidebar-fix.css', false, '1.0');
 		wp_enqueue_style('gravity-sidebar-fix');
 	}
 }
 
-Gravity_Sidebar_Fix::init();
+
+add_action('admin_enqueue_scripts', function(){
+	Gravity_Sidebar_Fix::enqueue();
+});
+
